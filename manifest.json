@@ -1,0 +1,41 @@
+{
+  "id": "./",
+  "name": "Course Tracker",
+  "short_name": "Courses",
+  "description": "Plan your online courses, keep every link and date in one place, and see what's up next right in your Windows Widgets panel.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f3f6f8",
+  "theme_color": "#0b6e8a",
+  "categories": ["education", "productivity"],
+  "icons": [
+    { "src": "icons/icon-96.png", "sizes": "96x96", "type": "image/png" },
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "icons/icon-512-maskable.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ],
+  "screenshots": [
+    { "src": "widgets/screenshot.png", "sizes": "600x400", "type": "image/png", "label": "The Up next widget in the Windows Widgets panel" }
+  ],
+  "widgets": [
+    {
+      "name": "Up next",
+      "short_name": "Up next",
+      "description": "Your next four courses, with dates. Click a course to open it, or tick it off with Done.",
+      "tag": "up-next",
+      "template": "course-tracker-up-next",
+      "ms_ac_template": "widgets/template.json",
+      "data": "widgets/data.json",
+      "type": "application/json",
+      "screenshots": [
+        { "src": "widgets/screenshot.png", "sizes": "600x400", "label": "The Up next widget" }
+      ],
+      "icons": [
+        { "src": "icons/icon-16.png", "sizes": "16x16" }
+      ],
+      "auth": false,
+      "multiple": false
+    }
+  ]
+}
